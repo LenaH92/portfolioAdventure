@@ -20,7 +20,7 @@
         "option1": "The desk (projects)",
         "option2": "The board (CV)"
     },
-    "writingDesk": {
+    "desk": {
         "descriptiveText": "You approach the desk. Several piles of papers rest on its surface. Which one do you want to examine?",
         "backTo": "Return to the Study"
     },

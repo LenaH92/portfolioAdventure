@@ -20,7 +20,7 @@
         "option1": "La mesa (proyectos)",
         "option2": "El tablero (CV)"
     },
-    "writingDesk": {
+    "desk": {
         "descriptiveText": "Te acercas a la mesa, hay varios montones de papeles, ¿cuál quieres curiosear?",
         "backTo": "Volver al estudio"
     },
