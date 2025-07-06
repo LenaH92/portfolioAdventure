@@ -1,0 +1,31 @@
+{
+    "welcomeScreen": {
+        "descriptiveText": "Despiertas en un torreón sombrío, apenas iluminado por la tenue luz de unas antorchas, con un mensaje flotando frente a tus ojos:\nBienvenida sea tu visita\nTus ojos recorren la estancia: una sala austera, con muebles de madera gastados. Al fondo, unas escaleras de piedra llevan al piso superior, donde imaginas se encuentra un estudio lleno de secretos.\n¿Qué exploras primero?",
+        "option1": "La sala (Datos sobre Lena Cortés)",
+        "option2": "El estudio (coding experience)"
+    },
+    "hall": {
+        "descriptiveText": "Estudiando la sala observas una serie de imágenes y papeles enmarcados sobre una estantería. Frente a ella hay una mesita con un diario sobre ella.\n¿Qué quieres ver?",
+        "backTo": "Sube al estudio",
+        "option1": "Los marcos (imágenes y certificados)",
+        "option2": "El diario (LinkedIn)"
+    },
+    "frames": {
+        "descriptiveText": "Hojeas los marcos encontrando mapas, retratos y diplomas",
+        "backTo": "Vuelve a la Sala"
+    },
+    "study": {
+        "descriptiveText": "Tras subir las escaleras, empujas la puerta, que chirría al abrirse. Ante ti se revela una habitación desordenada, con libros y papeles esparcidos.\nTu mirada se dirige hacia la mesa que tiene papeles limpiamente apilados en diferentes montones. Al otro lado de la sala está un tablón del que cuelgan papeles.\n¿Qué quieres ver ahora?",
+        "backTo": "Baja a la Sala",
+        "option1": "La mesa (proyectos)",
+        "option2": "El tablero (CV)"
+    },
+    "writingDesk": {
+        "descriptiveText": "Te acercas a la mesa, hay varios montones de papeles, ¿cuál quieres curiosear?",
+        "backTo": "Volver al estudio"
+    },
+    "pinboard": {
+        "descriptiveText": "Un tablero de madera gastada sostiene varios pergaminos sujetos con viejas chinchetas de bronce. Pero al observarlos con atención, notas que todos son copias del mismo mensaje arcano. ¿Te atreves a tomar uno?",
+        "backTo": "Volver al estudio"
+    }
+}

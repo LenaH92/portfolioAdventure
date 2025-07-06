@@ -1,0 +1,31 @@
+{
+    "welcomeScreen": {
+        "descriptiveText": "You awaken in a shadowy tower, dimly lit by the flickering light of a few torches. A message floats before your eyes:\nYour arrival is honored\nYour gaze sweeps across the room: a modest hall, with worn wooden furniture. At the far end, a stone staircase leads to the upper floor, where you imagine a study full of secrets awaits.\nWhat do you explore first?",
+        "option1": "The hall (Information about Lena Cortés)",
+        "option2": "The study (coding experience)"
+    },
+    "hall": {
+        "descriptiveText": "As you examine the hall, you notice a series of framed images and documents on a shelf. In front of it stands a small table with a journal resting atop.\nWhat do you want to explore?",
+        "backTo": "Go up to the study",
+        "option1": "The frames (images and certificates)",
+        "option2": "The journal (LinkedIn)"
+    },
+    "frames": {
+        "descriptiveText": "You browse through the frames, discovering maps, portraits, and diplomas.",
+        "backTo": "Return to the Hall"
+    },
+    "study": {
+        "descriptiveText": "After climbing the stairs, you push open a door that creaks loudly. Before you unfolds a cluttered room, with books and papers scattered about.\nYour eyes are drawn to a desk with neatly stacked documents. On the far wall hangs a board covered in pinned notes.\nWhat do you want to explore next?",
+        "backTo": "Go down to the Hall",
+        "option1": "The desk (projects)",
+        "option2": "The board (CV)"
+    },
+    "writingDesk": {
+        "descriptiveText": "You approach the desk. Several piles of papers rest on its surface. Which one do you want to examine?",
+        "backTo": "Return to the study"
+    },
+    "pinboard": {
+        "descriptiveText": "An old wooden board holds several scrolls pinned with aged bronze tacks. But as you study them closely, you notice they’re all copies of the same arcane message.\nClick here to take one with you.",
+        "backTo": "Return to the study"
+    }
+}
