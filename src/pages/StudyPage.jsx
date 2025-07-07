@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const StudyPage = () => {
 
@@ -14,7 +14,7 @@ const StudyPage = () => {
 
     return (<><div>
         <p>{description}</p>
-        <p>{backTo} </p>
+        <Link to="/hall">{backTo} </Link>
         <div className="optionsDiv">
             <button onClick={() => navigate("/desk")}> {opt1}</button>
             <button onClick={() => navigate("/pinboard")}> {opt2}</button>

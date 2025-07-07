@@ -9,7 +9,7 @@ const NotFoundPage = () => {
 
     return (<><div>
         <p>{description}</p>
-        <Link to="/hall">{backTo} </Link>
+        <Link to="/welcome">{backTo} </Link>
     </div></>);
 }
 
