@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const DeskPage = () => {
     const { t } = useTranslation()
@@ -8,7 +9,7 @@ const DeskPage = () => {
 
     return (<><div>
         <p>{description}</p>
-        <p>{backTo} </p>
+        <Link to="/study">{backTo} </Link>
     </div></>);
 }
 

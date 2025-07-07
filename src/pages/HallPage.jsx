@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const HallPage = () => {
-
+    const navigate = useNavigate()
     const { t } = useTranslation()
 
     const description = t("hall.descriptiveText");
@@ -14,8 +15,8 @@ const HallPage = () => {
         <p>{description}</p>
         <p>{backTo} </p>
         <div className="optionsDiv">
-            <button> {opt1}</button>
-            <button> {opt2}</button>
+            <button onClick={() => navigate("/frames")}> {opt1}</button>
+            <button onClick={() => window.open("https://www.linkedin.com/in/lena-webdeveloper/", "_blank")}> {opt2}</button>
         </div></div></>);
 }
 

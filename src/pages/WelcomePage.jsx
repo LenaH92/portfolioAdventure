@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const WelcomePage = () => {
 
     const { t } = useTranslation()
+    const navigate = useNavigate()
 
     const description = t("welcomeScreen.descriptiveText");
     const opt1 = t("welcomeScreen.option1");
@@ -12,8 +14,8 @@ const WelcomePage = () => {
     return (<><div>
         <p>{description}</p>
         <div className="optionsDiv">
-            <button> {opt1}</button>
-            <button> {opt2}</button>
+            <button onClick={() => navigate("/hall")}> {opt1}</button>
+            <button onClick={() => navigate("/study")}> {opt2}</button>
         </div></div></>);
 }
 
