@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const PinboardPage = () => {
     const { t } = useTranslation()
 
