@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import ChooseLanguagePage from './pages/ChooseLanguagePage'
 import WelcomePage from './pages/WelcomePage'
@@ -6,10 +6,13 @@ import Navbar from './components/Navbar'
 
 function App() {
 
+  const location = useLocation()
+
+  const hideNavbar = location.pathname === "/"
 
   return (
     <>
-      <Navbar />
+      {!hideNavbar && <Navbar />}
       <div className="appContainer">
         <Routes>
           <Route path="/" element={<ChooseLanguagePage />} />
