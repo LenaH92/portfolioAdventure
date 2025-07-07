@@ -27,5 +27,9 @@
     "pinboard": {
         "descriptiveText": "An old wooden board holds several scrolls pinned with aged bronze tacks. But as you study them closely, you notice they’re all copies of the same arcane message.\nClick here to take one with you.",
         "backTo": "Return to the Study"
+    },
+    "notFound": {
+        "descriptiveText": "You wander down a corridor not marked on any map. The stone beneath your feet groans, and the air grows heavy, as if the castle itself were trying to warn you.\nYou've reached a forgotten place — a page that does not exist… or was sealed away by ancient magic.\nPerhaps it is wise to turn back before it's too late.",
+        "backToHome": "Return to the beginning"
     }
 }
