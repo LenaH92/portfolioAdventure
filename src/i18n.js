@@ -3,8 +3,8 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
 // get dialogs files 
-import es from './locales/es.json'
-import en from './locales/en.json'
+import es from './locale/es.json'
+import en from './locale/en.json'
 
 
 i18n.use(initReactI18next).init({
