@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Deadpool Hangman",
+        "description": "Juego donde se tiene que averiguar la palabra relacionada con Deadpool llevando a Dogpool para selecionar las letras",
+        "tech": [
+            "HTML",
+            "CSS"
+        ],
+        "image": "/assets/aventura.png"
+    },
+    {
+        "id": 2,
+        "title": "Travel Journal",
+        "description": "Portfolio inspirado en fantasía medieval.",
+        "tech": [
+            "React",
+            "Vite",
+            "Mock backend"
+        ],
+        "image": "/assets/portfolio.png"
+    },
+    {
+        "id": 3,
+        "title": "Plantea",
+        "description": "Portfolio inspirado en fantasía medieval.",
+        "tech": [
+            "React",
+            "Vite",
+            "Node.js",
+            "MongoDB"
+        ],
+        "image": "/assets/portfolio.png"
+    }
+]
