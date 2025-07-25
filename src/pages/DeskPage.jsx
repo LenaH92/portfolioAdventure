@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-//import projectsJson from "../components/projectsModal/projectsJson.json"
 import ProjectModal from "../components/projectsModal/ProjectModal"
 import { useState } from "react";
 
