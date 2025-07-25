@@ -5,14 +5,15 @@
         "description": "Juego donde se tiene que averiguar la palabra relacionada con Deadpool llevando a Dogpool para selecionar las letras",
         "tech": [
             "HTML",
-            "CSS"
+            "CSS",
+            "JavaScript"
         ],
         "image": "/assets/aventura.png"
     },
     {
         "id": 2,
         "title": "Travel Journal",
-        "description": "Portfolio inspirado en fantasía medieval.",
+        "description": "Aplicacion simple para mantener un diario de tus viajes.",
         "tech": [
             "React",
             "Vite",
@@ -23,7 +24,7 @@
     {
         "id": 3,
         "title": "Plantea",
-        "description": "Portfolio inspirado en fantasía medieval.",
+        "description": "Foro donde compartir sabiduria sober botánica.",
         "tech": [
             "React",
             "Vite",
