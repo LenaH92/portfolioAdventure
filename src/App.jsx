@@ -9,6 +9,8 @@ import DeskPage from './pages/DeskPage'
 import FramesPage from './pages/FramesPage'
 import PinboardPage from './pages/PinboardPage'
 import NotFoundPage from './pages/NotFoundPage'
+import { ModalProvider } from './contexts/ModalContext'
+import ModalContainer from "./components/ModalContainer"
 
 function App() {
 
@@ -18,20 +20,22 @@ function App() {
 
   return (
     <>
-      {!hideNavbar && <Navbar />}
-      <div className="appContainer">
-        <Routes>
-          <Route path="/" element={<ChooseLanguagePage />} />
-          <Route path="/welcome" element={<WelcomePage />} />
-          <Route path="/hall" element={<HallPage />} />
-          <Route path="/study" element={<StudyPage />} />
-          <Route path="/desk" element={<DeskPage />} />
-          <Route path="/frames" element={<FramesPage />} />
-          <Route path="/pinboard" element={<PinboardPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </div>
-
+      <ModalProvider>
+        {!hideNavbar && <Navbar />}
+        <div className="appContainer">
+          <Routes>
+            <Route path="/" element={<ChooseLanguagePage />} />
+            <Route path="/welcome" element={<WelcomePage />} />
+            <Route path="/hall" element={<HallPage />} />
+            <Route path="/study" element={<StudyPage />} />
+            <Route path="/desk" element={<DeskPage />} />
+            <Route path="/frames" element={<FramesPage />} />
+            <Route path="/pinboard" element={<PinboardPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+          <ModalContainer />
+        </div>
+      </ModalProvider>
     </>
   )
 }

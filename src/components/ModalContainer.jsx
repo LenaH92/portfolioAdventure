@@ -1,0 +1,24 @@
+import { useModal } from "../contexts/ModalContext";
+
+const ModalContainer = () => {
+    const { modal, closeModal } = useModal();
+
+    if (!modal.type) return null;
+
+    const modalProps = { onclose: closeModal, data: modal.data }
+
+    switch (modal.type) {
+        case 'project':
+            return <ProjectModal {...modalProps} />
+        case 'cv':
+            return <CvModal {...modalProps} />;
+        case 'gallery':
+            return <GalleryModal {...modalProps} />;
+        case 'map':
+            return <MapModal {...modalProps} />;
+        default:
+            return null;
+    }
+}
+
+export default ModalContainer;
