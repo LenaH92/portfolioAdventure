@@ -1,13 +1,13 @@
-function ProjectModal({ project, onClose }) {
+function ProjectModal({ data, onclose }) {
     return (
         <div className="modal-overlay">
             <div className="modal">
-                <button onClick={onClose}>Cerrar</button>
-                <h2>{project.title}</h2>
-                <img src={project.image} alt={project.title} />
-                <p>{project.description}</p>
+                <button onClick={onclose}>Cerrar</button>
+                <h2>{data.title}</h2>
+                <img src={data.image} alt={data.title} />
+                <p>{data.description}</p>
                 <ul>
-                    {project.tech.map((tech, i) => (
+                    {data.tech.map((tech, i) => (
                         <li key={i}>{tech}</li>
                     ))}
                 </ul>

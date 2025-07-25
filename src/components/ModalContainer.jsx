@@ -1,4 +1,5 @@
 import { useModal } from "../contexts/ModalContext";
+import ProjectModal from "./modals/ProjectModal";
 
 const ModalContainer = () => {
     const { modal, closeModal } = useModal();
