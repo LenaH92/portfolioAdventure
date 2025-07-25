@@ -22,7 +22,43 @@
     },
     "desk": {
         "descriptiveText": "You approach the desk. Several piles of papers rest on its surface. Which one do you want to examine?",
-        "backTo": "Return to the Study"
+        "backTo": "Return to the Study",
+        "projects": [
+            {
+                "id": 1,
+                "title": "Deadpool Hangman",
+                "description": "Game where you have to find the word related to Deadpool by leading Dogpool to select the letters",
+                "tech": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                "image": "../assets/aventura.png"
+            },
+            {
+                "id": 2,
+                "title": "Travel Journal",
+                "description": "Simple application to keep a journal of your travels.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "Mock backend"
+                ],
+                "image": "../assets/portfolio.png"
+            },
+            {
+                "id": 3,
+                "title": "Plantea",
+                "description": "Forum to share superb botanical wisdom.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "image": "../assets/portfolio.png"
+            }
+        ]
     },
     "pinboard": {
         "descriptiveText": "An old wooden board holds several scrolls pinned with aged bronze tacks. But as you study them closely, you notice they’re all copies of the same arcane message.\nClick here to take one with you.",

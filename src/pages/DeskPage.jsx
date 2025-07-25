@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-import projectsJson from "../components/projectsModal/projectsJson.json"
+//import projectsJson from "../components/projectsModal/projectsJson.json"
 import ProjectModal from "../components/projectsModal/ProjectModal"
 import { useState } from "react";
 
@@ -11,6 +11,7 @@ const DeskPage = () => {
 
     const description = t("desk.descriptiveText");
     const backTo = t("desk.backTo")
+    const projects = t("desk.projects", { returnObjects: true })
 
     const [selectedProject, setSelectedProject] = useState(null)
     function openModal(proejct) {
@@ -23,7 +24,7 @@ const DeskPage = () => {
     return (<><div>
         <p>{description}</p>
         <div className="projectListDiv">
-            {projectsJson.map((project) => (
+            {projects.map((project) => (
                 <div key={project.id} className="card" onClick={() => openModal(project)}>
                     <img src={project.image} alt={project.title} />
                     <h3>{project.title}</h3>

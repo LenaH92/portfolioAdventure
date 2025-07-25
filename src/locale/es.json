@@ -22,7 +22,43 @@
     },
     "desk": {
         "descriptiveText": "Te acercas a la mesa, hay varios montones de papeles, ¿cuál quieres curiosear?",
-        "backTo": "Volver al estudio"
+        "backTo": "Volver al estudio",
+        "projects": [
+            {
+                "id": 1,
+                "title": "Deadpool Hangman",
+                "description": "Juego donde se tiene que averiguar la palabra relacionada con Deadpool llevando a Dogpool para selecionar las letras",
+                "tech": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                "image": "../assets/aventura.png"
+            },
+            {
+                "id": 2,
+                "title": "Travel Journal",
+                "description": "Aplicacion simple para mantener un diario de tus viajes.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "Mock backend"
+                ],
+                "image": "../assets/portfolio.png"
+            },
+            {
+                "id": 3,
+                "title": "Plantea",
+                "description": "Foro donde compartir sabiduria sober botánica.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "image": "../assets/portfolio.png"
+            }
+        ]
     },
     "pinboard": {
         "descriptiveText": "Un tablero de madera gastada sostiene varios pergaminos sujetos con viejas chinchetas de bronce. Pero al observarlos con atención, notas que todos son copias del mismo mensaje arcano. ¿Te atreves a tomar uno?",
