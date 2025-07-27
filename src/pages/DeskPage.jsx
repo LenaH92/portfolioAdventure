@@ -16,12 +16,7 @@ const DeskPage = () => {
     const [selectedProject, setSelectedProject] = useState(null)
 
     const { openModal } = useModal()
-    /* function openModal(proejct) {
-        setSelectedProject(proejct)
-    }
-    function closeModal() {
-        setSelectedProject(null)
-    } */
+
 
     return (<><div>
         <p>{description}</p>
