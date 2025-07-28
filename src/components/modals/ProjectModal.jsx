@@ -1,6 +1,6 @@
 function ProjectModal({ data, onclose }) {
     return (
-        <div className="modal-overlay">
+        <div className="modal-overlay" onClick={onclose}>
             <div className="modal">
                 <button onClick={onclose}>Cerrar</button>
                 <h2>{data.title}</h2>

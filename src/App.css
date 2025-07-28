@@ -34,7 +34,7 @@
   margin-bottom: 1rem;
 }
 
-.galleryImgCard {
+.galleryDiv {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -42,8 +42,16 @@
 
 .galleryImgCard img {
   max-width: 150px;
-  max-height: auto;
+  height: auto;
   padding: 10px;
   border: solid 1px;
   border-radius: 10px;
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
