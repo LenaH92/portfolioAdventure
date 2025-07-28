@@ -33,3 +33,17 @@
   border: 1px solid #ccc;
   margin-bottom: 1rem;
 }
+
+.galleryImgCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.galleryImgCard img {
+  max-width: 150px;
+  max-height: auto;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+}
