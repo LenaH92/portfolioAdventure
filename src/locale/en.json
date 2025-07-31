@@ -12,7 +12,33 @@
     },
     "frames": {
         "descriptiveText": "You browse through the frames, discovering maps, portraits, and diplomas.",
-        "backTo": "Return to the Hall"
+        "backTo": "Return to the Hall",
+        "images": [
+            {
+                "src": "Lena1.jpg",
+                "alt": "Photo of Lena Cortes"
+            },
+            {
+                "src": "Lena2.jpg",
+                "alt": "Lena Cortes at the beach in winter"
+            },
+            {
+                "src": "IronhackDiplomaLenaCortes.png",
+                "alt": "Web Development Diploma from Ironhack"
+            },
+            {
+                "src": "DiplomaCiberseguridadLenaCortes.jpg",
+                "alt": "Cybersecurity course by the Government of Spain"
+            },
+            {
+                "src": "GoogleAIEnLenaCortes.jpg",
+                "alt": "Google course on Artificial Intelligence"
+            },
+            {
+                "src": "GoogleapplicationsLena.jpg",
+                "alt": "Course on using Google applications"
+            }
+        ]
     },
     "study": {
         "descriptiveText": "After climbing the stairs, you push open a door that creaks loudly. Before you unfolds a cluttered room, with books and papers scattered about.\nYour eyes are drawn to a desk with neatly stacked documents. On the oposite wall hangs a board covered in pinned notes.\nWhat do you want to explore next?",

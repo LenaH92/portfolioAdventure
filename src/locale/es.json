@@ -12,7 +12,33 @@
     },
     "frames": {
         "descriptiveText": "Hojeas los marcos encontrando mapas, retratos y diplomas",
-        "backTo": "Vuelve a la Sala"
+        "backTo": "Vuelve a la Sala",
+        "images": [
+            {
+                "src": "Lena1.jpg",
+                "alt": "Foto de Lena Cortés"
+            },
+            {
+                "src": "Lena2.jpg",
+                "alt": " Lena Cortés en la playa en invierno"
+            },
+            {
+                "src": "IronhackDiplomaLenaCortes.png",
+                "alt": "Diploma de Desarrollo  Web por IronHack"
+            },
+            {
+                "src": "DiplomaCiberseguridadLenaCortes.jpg",
+                "alt": "Curso de Ciberseguridad por el Gobierno de España"
+            },
+            {
+                "src": "GoogleAIEnLenaCortes.jpg",
+                "alt": "Corso de Google sobre Inteligencia Artificial"
+            },
+            {
+                "src": "GoogleapplicationsLena.jpg",
+                "alt": "Curso dobre la manipulacion de las aplicaciones de Google"
+            }
+        ]
     },
     "study": {
         "descriptiveText": "Tras subir las escaleras, empujas la puerta, que chirría al abrirse. Ante ti se revela una habitación desordenada, con libros y papeles esparcidos.\nTu mirada se dirige hacia la mesa que tiene papeles limpiamente apilados en diferentes montones. Al otro lado de la sala está un tablón del que cuelgan papeles.\n¿Qué quieres ver ahora?",
