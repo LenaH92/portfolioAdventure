@@ -2,32 +2,43 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useModal } from "../contexts/ModalContext";
 
-import image1 from "../assets/Lena1.jpg";
-import image2 from "../assets/Lena2.jpg";
-import image3 from "../assets/IronhackDiplomaLenaCortes.png";
-import image4 from "../assets/GoogleapplicationsLena.jpg";
-import image5 from "../assets/Google_AI_En_LenaCortes_page-0001.jpg";
-import image6 from "../assets/diplomaCiberseguridadLenaCortes.jpg";
-import { useState } from "react";
-import GalleryModal from "../components/modals/GalleryModal";
+import lena1 from "../assets/Lena1.jpg";
+import lena2 from "../assets/Lena2.jpg";
+import ironhack from "../assets/IronhackDiplomaLenaCortes.png";
+import googleAI from "../assets/GoogleAIEnLenaCortes.jpg";
+import googleApps from "../assets/GoogleapplicationsLena.jpg";
+import cibersecurity from "../assets/diplomaCiberseguridadLenaCortes.jpg";
+//import { useState } from "react";
 
-const imgArr = [image1, image2, image3, image4, image5, image6]
+const imagesMap = {
+    "Lena1.jpg": lena1,
+    "Lena2.jpg": lena2,
+    "IronhackDiplomaLenaCortes.png": ironhack,
+    "GoogleapplicationsLena.jpg": googleApps,
+    "GoogleAIEnLenaCortes.jpg": googleAI,
+    "DiplomaCiberseguridadLenaCortes.jpg": cibersecurity,
+}
 
 const FramesPage = () => {
     const { t } = useTranslation()
 
     const description = t("frames.descriptiveText");
     const backTo = t("frames.backTo")
+    const images = t("frames.images", { returnObjects: true });
 
-    const [selectedImg, setSelectedImg] = useState(null)
+    //const [selectedImg, setSelectedImg] = useState(null)
     const { openModal } = useModal()
 
     return (<><div>
         <p>{description}</p>
         {<div className="galleryDiv">
-            {imgArr.map((img, index) => (
-                <div key={index} className="galleryImgCard card" onClick={() => openModal('gallery', img)}>
-                    <img src={img} alt={`Imagen ${index + 1}`} />
+            {images.map((img, index) => (
+                <div
+                    key={index}
+                    className="galleryImgCard card"
+                    onClick={() => openModal("gallery", { src: imagesMap[img.src], alt: img.alt })}
+                >
+                    <img src={imagesMap[img.src]} alt={img.alt} />
                 </div>
             ))}
         </div>}
