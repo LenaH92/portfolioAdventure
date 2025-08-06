@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import ProjectModal from "../components/modals/ProjectModal"
-import { useState } from "react";
+//import { useState } from "react";
 import { useModal } from "../contexts/ModalContext";
 
 
@@ -13,7 +13,7 @@ const DeskPage = () => {
     const backTo = t("desk.backTo")
     const projects = t("desk.projects", { returnObjects: true })
 
-    const [selectedProject, setSelectedProject] = useState(null)
+    //const [selectedProject, setSelectedProject] = useState(null)
 
     const { openModal } = useModal()
 
@@ -29,9 +29,9 @@ const DeskPage = () => {
             ))}
         </div>
         <Link to="/study">{backTo} </Link>
-        {selectedProject && (
+        {/* {selectedProject && (
             <ProjectModal project={selectedProject} onClose={closeModal} />
-        )}
+        )} */}
     </div ></>);
 }
 
