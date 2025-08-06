@@ -1,6 +1,6 @@
 const GalleryModal = ({ data, onclose }) => {
     return (<div className="modal-overlay" onClick={onclose}>
-        <div className="modal">
+        <div className="modal" onClick={(e) => e.stopPropagation()}>
             <button onClick={onclose}>Cerrar</button>
             <img src={data.src} alt={data.alt} />
             <p>{data.alt}</p>
