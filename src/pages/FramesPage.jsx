@@ -8,7 +8,6 @@ import ironhack from "../assets/IronhackDiplomaLenaCortes.png";
 import googleAI from "../assets/GoogleAIEnLenaCortes.jpg";
 import googleApps from "../assets/GoogleapplicationsLena.jpg";
 import cibersecurity from "../assets/diplomaCiberseguridadLenaCortes.jpg";
-//import { useState } from "react";
 
 const imagesMap = {
     "Lena1.jpg": lena1,
@@ -19,6 +18,7 @@ const imagesMap = {
     "DiplomaCiberseguridadLenaCortes.jpg": cibersecurity,
 }
 
+
 const FramesPage = () => {
     const { t } = useTranslation()
 
@@ -26,27 +26,31 @@ const FramesPage = () => {
     const backTo = t("frames.backTo")
     const images = t("frames.images", { returnObjects: true });
 
-    //const [selectedImg, setSelectedImg] = useState(null)
     const { openModal } = useModal()
+
+    const imgUrlGetter = images.map((img) => ({
+        src: imagesMap[img.src],
+        alt: img.alt
+    }));
 
     return (<><div>
         <p>{description}</p>
         {<div className="galleryDiv">
-            {images.map((img, index) => (
+            {imgUrlGetter.map((img, index) => (
                 <div
                     key={index}
                     className="galleryImgCard card"
-                    onClick={() => openModal("gallery", { src: imagesMap[img.src], alt: img.alt })}
+                    onClick={() => openModal("gallery", {
+                        images: imgUrlGetter,
+                        currentIndex: index
+                    })}
                 >
-                    <img src={imagesMap[img.src]} alt={img.alt} />
+                    <img src={img.src} alt={img.alt} />
                 </div>
             ))}
         </div>}
         <Link to="/hall">{backTo} </Link>
 
-        {/* {selectedImg && (
-            <GalleryModal image={selectedImg} onClose={closeModal} />
-        )} */}
     </div></>);
 }
 
