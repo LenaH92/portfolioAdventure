@@ -1,12 +1,28 @@
+import { useState } from "react";
+
 const GalleryModal = ({ data, onclose }) => {
 
-    const currentImage = data.images[data.currentIndex];
+    const [index, setIndex] = useState(data.currentIndex)
+
+    const currentImage = data.images[index];
+
+    //arrows 
+    function goPrevious() { setIndex(index - 1) }
+
+    function goNext() { setIndex(index + 1) }
 
     return (<div className="modal-overlay" onClick={onclose}>
         <div className="modal" onClick={(e) => e.stopPropagation()}>
             <button onClick={onclose}>Cerrar</button>
             <img src={currentImage.src} alt={currentImage.alt} />
             <p>{currentImage.alt}</p>
+
+            <div className="arrowsDiv">
+                {index > 0 && (<button type="button" onClick={goPrevious}> ⬅️ </button>)}
+
+                {index < data.images.length - 1 && (<button type="button" onClick={goNext}> ➡️ </button>)}
+            </div>
+
         </div>
 
     </div>);
