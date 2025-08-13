@@ -11,8 +11,8 @@ const GalleryModal = ({ data, onclose }) => {
 
     function goNext() { setIndex(index + 1) }
 
-    function goTo() {
-        setIndex(i)
+    function goTo(x) {
+        setIndex(x);
     }
 
     return (<div className="modal-overlay" onClick={onclose}>
