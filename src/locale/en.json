@@ -93,5 +93,14 @@
     "notFound": {
         "descriptiveText": "You wander down a corridor not marked on any map. The stone beneath your feet groans, and the air grows heavy, as if the castle itself were trying to warn you.\nYou've reached a forgotten place — a page that does not exist… or was sealed away by ancient magic.\nPerhaps it is wise to turn back before it's too late.",
         "backTo": "Return to the beginning"
+    },
+    "map": {
+        "map": "MAP",
+        "lowerFloor": "Hall",
+        "upperFloor": "Study",
+        "frames": "Frames",
+        "diary": "Diary",
+        "projects": "Projects",
+        "cv": "CV"
     }
 }
