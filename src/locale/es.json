@@ -93,5 +93,14 @@
     "notFound": {
         "descriptiveText": "Te adentras por un pasillo que no figura en ningún mapa. La piedra bajo tus pies cruje y el aire se vuelve denso, como si el propio castillo quisiera advertirte.\nHas llegado a un rincón olvidado, una página que no existe... o que ha sido sellada por antiguos conjuros.\nTal vez quieras regresar antes de que sea demasiado tarde.",
         "backTo": "Regresar al inicio"
+    },
+    "map": {
+        "map": "MAPA",
+        "lowerFloor": "Sala",
+        "upperFloor": "Estudio",
+        "frames": "Marcos",
+        "diary": "Diario",
+        "projects": "Proyectos",
+        "cv": "CV"
     }
 }
