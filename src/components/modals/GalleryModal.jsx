@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const GalleryModal = ({ data, onclose }) => {
+const GalleryModal = ({ data, onClose }) => {
 
     const [index, setIndex] = useState(data.currentIndex)
 
@@ -15,9 +15,9 @@ const GalleryModal = ({ data, onclose }) => {
         setIndex(x);
     }
 
-    return (<div className="modal-overlay" onClick={onclose}>
+    return (<div className="modal-overlay" onClick={onClose}>
         <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <button onClick={onclose}>Cerrar</button>
+            <button onClick={onClose}>Cerrar</button>
             <img src={currentImage.src} alt={currentImage.alt} />
             <p>{currentImage.alt}</p>
 

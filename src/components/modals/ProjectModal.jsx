@@ -1,8 +1,8 @@
-function ProjectModal({ data, onclose }) {
+function ProjectModal({ data, onClose }) {
     return (
-        <div className="modal-overlay" onClick={onclose}>
+        <div className="modal-overlay" onClick={onClose}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
-                <button onClick={onclose}>Cerrar</button>
+                <button onClick={onClose}>Cerrar</button>
                 <h2>{data.title}</h2>
                 <img src={data.image} alt={data.title} />
                 <p>{data.description}</p>

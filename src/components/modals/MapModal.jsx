@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const MapModal = ({ onclose }) => {
+const MapModal = ({ onClose }) => {
     const { t } = useTranslation()
 
     const title = t("map.map")
@@ -11,9 +11,12 @@ const MapModal = ({ onclose }) => {
     const projects = t("map.projects")
     const cv = t("map.cv")
 
-    return (<div className="mapModalDiv">
-        <button type="button" onClick={onclose}>X</button>
-        <h2>{title}</h2>
+    return (<div className="mapModalDiv modal-overlay" onClick={onClose}>
+        <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <button type="button" onClick={onClose}>X</button>
+            <h2>{title}</h2>
+        </div>
+
     </div>);
 }
 

@@ -8,7 +8,7 @@ const ModalContainer = () => {
 
     if (!modal.type) return null;
 
-    const modalProps = { onclose: closeModal, data: modal.data }
+    const modalProps = { onClose: closeModal, data: modal.data }
 
     switch (modal.type) {
         case 'project':
