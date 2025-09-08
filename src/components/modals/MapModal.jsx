@@ -15,6 +15,12 @@ const MapModal = ({ onClose }) => {
         <div className="modal" onClick={(e) => e.stopPropagation()}>
             <button type="button" onClick={onClose}>X</button>
             <h2>{title}</h2>
+            <div className="loweFloor">
+                <h3>{lowerFloor} </h3>
+            </div>
+            <div className="upperFloor">
+                <h3>{upperFloor}</h3>
+            </div>
         </div>
 
     </div>);
