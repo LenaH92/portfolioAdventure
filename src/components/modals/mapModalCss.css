@@ -7,7 +7,7 @@
 
 .floorsMapsContainer {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
 }
@@ -23,16 +23,27 @@
     left: 0;
     width: 100%;
     cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    /* baja el texto */
+    justify-content: flex-start;
+    /* lo manda a la izquierda */
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .clickArea.top {
-    top: 0;
+    top: -20px;
+    left: -20px;
     height: 50%;
+    align-items: flex-start;
 }
 
 .clickArea.bottom {
-    bottom: 0;
+    bottom: -20px;
+    left: 20px;
     height: 50%;
+    justify-content: right;
 }
 
 .floorSection {
