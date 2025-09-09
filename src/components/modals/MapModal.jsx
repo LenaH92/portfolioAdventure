@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import lowerFloorMap from "../../assets/LowerFloor.png"
+import upperFloorMap from "../../assets/UpperFloor.png"
 
 const MapModal = ({ onClose }) => {
     const { t } = useTranslation()
@@ -17,9 +19,23 @@ const MapModal = ({ onClose }) => {
             <h2>{title}</h2>
             <div className="loweFloor">
                 <h3>{lowerFloor} </h3>
+                <div className="mapContainer">
+                    <img src={lowerFloorMap} alt={lowerFloor} useMap="#lowerFloorMap" className="mapImg" />
+                    <map name="lowerFloorMap">
+                        <area shape="rect" coords="0,0,500,250" href="/frames" alt="frames" />
+                        <area shape="rect" coords="0, 250, 500, 500" href="https://www.linkedin.com/in/lena-webdeveloper/" alt="Diary" />
+                    </map>
+                </div>
             </div>
             <div className="upperFloor">
                 <h3>{upperFloor}</h3>
+                <div className="mapContainer">
+                    <img src={upperFloorMap} alt={upperFloor} useMap="#upperFloorMap" className="mapImg" />
+                    <map name="upperFloorMap">
+                        <area shape="rect" coords="0,0,500,250" href="/cv" alt="CV" />
+                        <area shape="rect" coords="0, 250, 500, 500" href="/desk" alt="desk" />
+                    </map>
+                </div>
             </div>
         </div>
 
