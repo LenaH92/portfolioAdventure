@@ -1,0 +1,41 @@
+.mapContainer {
+    position: relative;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 1rem auto;
+}
+
+.floorsMapsContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.clickArea {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.clickArea.top {
+    top: 0;
+    height: 50%;
+}
+
+.clickArea.bottom {
+    bottom: 0;
+    height: 50%;
+}
+
+.floorSection {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
