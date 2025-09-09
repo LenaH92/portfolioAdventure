@@ -30,34 +30,33 @@ const MapModal = ({ onClose }) => {
                     <h3>{lowerFloor} </h3>
                     <div className="mapContainer">
                         <img src={lowerFloorMap} alt={lowerFloor} className="mapImg" />
-                        <div
+                        <span
                             className="clickArea top"
-                            onClick={() => handleMapClick("/frames")}
-                            title={t("map.frames")}
-                        />
-                        <div
+                            onClick={() => handleMapClick("/frames")}>
+                            {frames}
+                        </span>
+
+
+                        <span
                             className="clickArea bottom"
                             onClick={() =>
                                 window.open("https://www.linkedin.com/in/lena-webdeveloper/", "_blank")
-                            }
-                            title={t("map.diary")}
-                        />
+                            }>{diary} </span>
+
                     </div>
                 </div>
                 <div className="upperFloor">
                     <h3>{upperFloor}</h3>
                     <div className="mapContainer">
                         <img src={upperFloorMap} alt={upperFloor} className="mapImg" />
-                        <div
+                        <span
                             className="clickArea top"
-                            onClick={() => handleMapClick("/cv")}
-                            title={t("map.cv")}
-                        />
-                        <div
+                            onClick={() => handleMapClick("/cv")}>{cv} </span>
+
+                        <span
                             className="clickArea bottom"
-                            onClick={() => handleMapClick("/desk")}
-                            title={t("map.projects")}
-                        />
+                            onClick={() => handleMapClick("/desk")}>{projects} </span>
+
                     </div>
                 </div>
             </div>
